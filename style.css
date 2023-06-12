@@ -92,3 +92,17 @@ body {
 }
 
 /* about css end */
+
+/* swiper css start  */
+
+swiper-container {
+    width: 76rem;
+}
+
+swiper-slide {
+    /* height: 300px; */
+    line-height: 300px;
+    text-align: center;
+}
+
+/* swiper css end */
