@@ -14,13 +14,6 @@ body {
     width: 15rem;
 }
 
-@media (max-width: 350px) {
-    .logo {
-        height: 4rem;
-        width: 11.5rem;
-    }
-}
-
 /* navbar css end  */
 
 
@@ -35,7 +28,7 @@ body {
 
 /* best product css start */
 
-.product p::after {
+.products p::after {
     content: "";
     display: block;
     width: 50px;
@@ -55,13 +48,12 @@ body {
 .beds_section {
     border-radius: 3px;
     background-color: #faf8f8;
-    /* transition: all 1s; */
 }
 
 .image_2 {
     width: 97%;
     text-align: center;
-    height: 70vh;
+    height: 25rem;
     cursor: pointer;
 }
 
@@ -106,3 +98,59 @@ swiper-slide {
 }
 
 /* swiper css end */
+
+/* product css start  */
+
+.image_3 {
+    height: 43rem;
+    width: 30rem;
+    padding-top: 9rem;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #cccccc;
+    margin-bottom: 0;
+}
+
+.pro_table {
+    border: 1px solid #f0f0f0;
+}
+
+/* product css end  */
+/* responsing  */
+
+@media (max-width: 768px) {
+    .suitmd {
+        margin-top: 23px;
+    }
+}
+
+@media (max-width: 575px) {
+    .suitmd1 {
+        margin-top: 23px;
+    }
+}
+
+@media (max-width: 550px) {
+    .slider {
+        height: 42vh;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+    .logo {
+        height: 4rem;
+        width: 11.5rem;
+    }
+
+    .slider {
+        height: 35vh;
+    }
+
+    .image_2 {
+        height: 50vh;
+    }
+}
