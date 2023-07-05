@@ -5,55 +5,68 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    /* font-family: 'Baloo Bhai 2', cursive; */
 }
 
-/* navbar css start  */
+.common_family {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/******************************************************
+Home
+*******************************************************/
+
+/****************
+NavBar
+****************/
+.navbar {
+    font-family: 'Baloo Bhai 2', cursive;
+}
 
 .logo {
     height: 4rem;
     width: 15rem;
 }
 
-/* navbar css end  */
-
-
-/* slider css start */
+/****************
+Slider
+****************/
 
 .slider {
-    height: 60vh;
+    height: 320px;
 }
 
-/* slider css end  */
+/****************
+Main Section
+****************/
 
+/****************
+Title
+****************/
 
-/* best product css start */
-
-.products p::after {
+.best::after {
     content: "";
     display: block;
-    width: 50px;
-    height: 5px;
+    width: 57px;
+    height: 2px;
     background: #f7444e;
     margin: 10px auto 10px;
 }
 
-.iconbutton {
-    color: black;
-}
-
-.buttonall {
-    text-decoration: none;
-}
+/****************
+Best Product
+****************/
 
 .beds_section {
-    border-radius: 3px;
-    background-color: #faf8f8;
+    border-radius: 15px;
+    background-color: #faf8f89a;
+    /* background-color: #faf8f8; */
 }
 
 .image_2 {
     width: 97%;
     text-align: center;
-    height: 25rem;
+    height: 14.5rem;
     cursor: pointer;
 }
 
@@ -67,23 +80,82 @@ body {
     transform: scale(80%);
 }
 
-/* best product css end  */
-
-/* contact css start  */
+/****************
+Contact
+****************/
 
 .contact {
     background-color: #002c3e;
 }
 
-/* contact css end  */
+/******************************************************
+About Us
+*******************************************************/
 
-/* about css start  */
+/****************
+Owner
+****************/
 
-.aboutpro {
-    background-color: #d4ced0;
+.tes {
+    background: #e9eeef11;
+    /* background: #8a425a41; */
 }
 
-/* about css end */
+.test_text {
+    font-family: 'Lucida', serif;
+    font-size: 24px;
+    color: #8a8a8a;
+    font-style: italic;
+    line-height: 1.75;
+}
+
+.test_image {
+    width: 230px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+.test_image img {
+    max-width: 100%;
+}
+
+.test_name {
+    font-family: 'Lucida', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #232323;
+    margin-top: 14px;
+}
+
+/******************************************************
+Contact Us
+*******************************************************/
+
+/****************
+Owner
+****************/
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    /* background: url(./pic/jutti1-removebg-preview.png) no-repeat center center/cover; */
+    background: url(./pic/cont-removebg-preview.png) no-repeat center center/cover;
+    /* background: url(./pic/image1.png) no-repeat center center/cover; */
+}
+
+
+
 
 /* swiper css start  */
 
@@ -117,28 +189,88 @@ swiper-slide {
     border: 1px solid #f0f0f0;
 }
 
-/* product css end  */
+
+
+
 /* responsing  */
 
-@media (max-width: 768px) {
-    .suitmd {
-        margin-top: 23px;
+/* 
+@media (max-width: 1074px) {
+    .image_2 {
+        width: 97%;
+        text-align: center;
+        height: 15rem;
+        cursor: pointer;
+    }
+} */
+
+@media (max-width: 1030px) {
+    .bed {
+        font-size: 19px !important;
     }
 }
 
-@media (max-width: 575px) {
-    .suitmd1 {
+/* @media (max-width: 950px) {
+    .slider {
+        height: 35vh;
+    }
+} */
+
+@media (max-width: 768px) {
+    .slider {
+        height: 50vh;
+    }
+
+    /* .suitmd {
         margin-top: 23px;
+    } */
+}
+
+@media (max-width: 578px) {
+    /* .suitmd1 {
+        margin-top: 23px !important;
+    } */
+
+    .product_best {
+        width: 22rem;
+        padding-top: 23px;
+    }
+
+    .contact_add {
+        display: block;
+        /* color: black; */
+    }
+
+    /* .image_2 {
+        height: 50vh;
+    } */
+    .shoping {
+        padding-top: 15px;
     }
 }
 
 @media (max-width: 550px) {
     .slider {
-        height: 42vh;
+        height: 39vh;
     }
 
 }
 
+@media (max-width: 414px) {
+    .slider {
+        height: 25vh;
+    }
+
+    .best::after {
+        width: 40px;
+        height: 2px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+}
 
 @media (max-width: 350px) {
     .logo {
@@ -147,10 +279,10 @@ swiper-slide {
     }
 
     .slider {
-        height: 35vh;
+        height: 20vh;
     }
 
-    .image_2 {
+    /* .image_2 {
         height: 50vh;
-    }
+    } */
 }
