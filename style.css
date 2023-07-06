@@ -8,8 +8,12 @@ body {
     /* font-family: 'Baloo Bhai 2', cursive; */
 }
 
-.common_family {
-    font-family: 'Baloo Bhai 2', cursive;
+/* .common_family {
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+.common_font {
+    font-family: cursive;
 }
 
 /******************************************************
@@ -150,11 +154,15 @@ Owner
     z-index: -1;
     opacity: 0.5;
     /* background: url(./pic/jutti1-removebg-preview.png) no-repeat center center/cover; */
-    background: url(./pic/cont-removebg-preview.png) no-repeat center center/cover;
+    background: url(./pic/contact.jpg) no-repeat center center/cover;
     /* background: url(./pic/image1.png) no-repeat center center/cover; */
 }
 
-
+.form_bg {
+    background-color: rgb(191 19 16 / 43%);
+    /* background-color: rgb(51 88 78 / 43%); */
+    /* background-color: rgb(164 205 150 / 56%); */
+}
 
 
 /* swiper css start  */
