@@ -5,15 +5,6 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    /* font-family: 'Baloo Bhai 2', cursive; */
-}
-
-/* .common_family {
-    font-family: 'Courier New', Courier, monospace;
-} */
-
-.common_font {
-    font-family: cursive;
 }
 
 /******************************************************
@@ -23,10 +14,6 @@ Home
 /****************
 NavBar
 ****************/
-.navbar {
-    font-family: 'Baloo Bhai 2', cursive;
-}
-
 .logo {
     height: 4rem;
     width: 15rem;
@@ -35,7 +22,6 @@ NavBar
 /****************
 Slider
 ****************/
-
 .slider {
     height: 320px;
 }
@@ -60,18 +46,23 @@ Title
 /****************
 Best Product
 ****************/
-
-.beds_section {
+.beds_section1 {
     border-radius: 15px;
-    background-color: #faf8f89a;
+    width: 100%;
+    /* height: auto; */
+    /* background-color: #faf8f89a; */
+    border: 0.5px solid rgb(231, 228, 228);
     /* background-color: #faf8f8; */
+    /* background-color: rgb(191 19 16 / 43%); */
 }
 
-.image_2 {
-    width: 97%;
+.image_3 {
+    width: 100%;
     text-align: center;
-    height: 14.5rem;
+    height: 19rem;
+    /* height: auto; */
     cursor: pointer;
+    object-fit: fill;
 }
 
 .trans {
@@ -81,7 +72,7 @@ Best Product
 }
 
 .trans:hover {
-    transform: scale(80%);
+    transform: scale(98%);
 }
 
 /****************
@@ -114,12 +105,13 @@ Owner
 }
 
 .test_image {
-    width: 230px;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
     margin-top: 26px;
+    border: 0.5px solid rgb(233 230 230);
 }
 
 .test_image img {
@@ -153,16 +145,22 @@ Owner
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    /* background: url(./pic/jutti1-removebg-preview.png) no-repeat center center/cover; */
     background: url(./pic/contact.jpg) no-repeat center center/cover;
-    /* background: url(./pic/image1.png) no-repeat center center/cover; */
 }
 
 .form_bg {
-    background-color: rgb(191 19 16 / 43%);
-    /* background-color: rgb(51 88 78 / 43%); */
-    /* background-color: rgb(164 205 150 / 56%); */
+    background-color: rgb(137 133 186 / 25%);
 }
+
+textarea {
+    resize: none;
+}
+
+
+
+
+
+
 
 
 /* swiper css start  */
@@ -200,17 +198,9 @@ swiper-slide {
 
 
 
-/* responsing  */
-
-/* 
-@media (max-width: 1074px) {
-    .image_2 {
-        width: 97%;
-        text-align: center;
-        height: 15rem;
-        cursor: pointer;
-    }
-} */
+/**********************************************************************
+Responsing
+**********************************************************************/
 
 @media (max-width: 1030px) {
     .bed {
@@ -218,27 +208,13 @@ swiper-slide {
     }
 }
 
-/* @media (max-width: 950px) {
-    .slider {
-        height: 35vh;
-    }
-} */
-
 @media (max-width: 768px) {
     .slider {
         height: 50vh;
     }
-
-    /* .suitmd {
-        margin-top: 23px;
-    } */
 }
 
 @media (max-width: 578px) {
-    /* .suitmd1 {
-        margin-top: 23px !important;
-    } */
-
     .product_best {
         width: 22rem;
         padding-top: 23px;
@@ -246,15 +222,26 @@ swiper-slide {
 
     .contact_add {
         display: block;
-        /* color: black; */
     }
 
-    /* .image_2 {
-        height: 50vh;
-    } */
     .shoping {
         padding-top: 15px;
     }
+
+    .seemore_bt {
+        display: none;
+    }
+
+    .about_shop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_icon {
+        display: none;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -278,6 +265,14 @@ swiper-slide {
         font-size: 1.5rem;
     }
 
+    .beds_section1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 350px) {
@@ -290,7 +285,15 @@ swiper-slide {
         height: 20vh;
     }
 
-    /* .image_2 {
-        height: 50vh;
-    } */
+    .beds_section1 {
+        width: 90%;
+        height: 17rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image_3 {
+        width: 100%;
+        height: 10rem;
+    }
 }
