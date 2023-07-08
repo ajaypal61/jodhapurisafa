@@ -93,7 +93,6 @@ Owner
 
 .tes {
     background: #e9eeef11;
-    /* background: #8a425a41; */
 }
 
 .test_text {
@@ -130,10 +129,6 @@ Owner
 Contact Us
 *******************************************************/
 
-/****************
-Owner
-****************/
-
 #contact {
     position: relative;
 }
@@ -156,45 +151,34 @@ textarea {
     resize: none;
 }
 
+/******************************************************
+swiper 
+*******************************************************/
 
-
-
-
-
-
-
-/* swiper css start  */
+/****************
+All Products 
+****************/
 
 swiper-container {
-    width: 76rem;
+    width: 100%;
+    height: 100%;
 }
 
 swiper-slide {
-    /* height: 300px; */
-    line-height: 300px;
     text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* swiper css end */
-
-/* product css start  */
-
-/* .image_3 {
-    height: 43rem;
-    width: 30rem;
-    padding-top: 9rem;
-} */
-
-.price {
-    text-decoration: line-through;
-    color: #cccccc;
-    margin-bottom: 0;
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.pro_table {
-    border: 1px solid #f0f0f0;
-}
-
 
 
 
@@ -212,6 +196,15 @@ Responsing
     .slider {
         height: 50vh;
     }
+
+    .card_img {
+        width: 18rem;
+    }
+
+    .product_number {
+        display: none;
+    }
+
 }
 
 @media (max-width: 578px) {
@@ -242,6 +235,10 @@ Responsing
         display: none;
     }
 
+    .product_div {
+        padding: 0 4rem;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -249,6 +246,25 @@ Responsing
         height: 39vh;
     }
 
+    .card_img {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .product_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card_img {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media (max-width: 414px) {
@@ -273,6 +289,11 @@ Responsing
         align-items: center;
         flex-direction: column;
     }
+
+    .card-title {
+        display: none;
+    }
+
 }
 
 @media (max-width: 350px) {
@@ -296,4 +317,9 @@ Responsing
         width: 100%;
         height: 10rem;
     }
+
+    .card_img {
+        width: 13rem;
+    }
+
 }

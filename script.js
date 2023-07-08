@@ -1,29 +1,26 @@
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-        0: {
-            items: 1
+// Safa.html
+
+const swiperEl = document.querySelector('swiper-container')
+Object.assign(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-        600: {
-            items: 3
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
         },
-        1000: {
-            items: 5
-        }
-    }
-})
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+    },
+});
+swiperEl.initialize();
 
-// Slider
-
-
-// const progressCircle = document.querySelector(".autoplay-progress svg");
-// const progressContent = document.querySelector(".autoplay-progress span");
-
-// const swiperEl = document.querySelector("swiper-container");
-// swiperEl.addEventListener("autoplaytimeleft", (e) => {
-//     const [swiper, time, progress] = e.detail;
-//     progressCircle.style.setProperty("--progress", 1 - progress);
-//     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-// });
