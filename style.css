@@ -49,11 +49,7 @@ Best Product
 .beds_section1 {
     border-radius: 15px;
     width: 100%;
-    /* height: auto; */
-    /* background-color: #faf8f89a; */
     border: 0.5px solid rgb(231, 228, 228);
-    /* background-color: #faf8f8; */
-    /* background-color: rgb(191 19 16 / 43%); */
 }
 
 .image_3 {
@@ -61,7 +57,6 @@ Best Product
     width: 100%;
     text-align: center;
     height: 19rem;
-    /* height: auto; */
     cursor: pointer;
     object-fit: fill;
 }
@@ -181,6 +176,13 @@ swiper-slide img {
     object-fit: cover;
 }
 
+/******************************************************
+Safa
+*******************************************************/
+
+.product_name1 {
+    display: none;
+}
 
 
 /**********************************************************************
@@ -292,6 +294,19 @@ Responsing
     }
 
     .card-title {
+        display: none;
+    }
+
+    .product_name {
+        display: none;
+    }
+
+    .product_name1 {
+        display: block;
+        font-size: 16px;
+    }
+
+    .product_pri {
         display: none;
     }
 
