@@ -176,14 +176,6 @@ swiper-slide img {
     object-fit: cover;
 }
 
-/******************************************************
-Safa
-*******************************************************/
-
-.product_name1 {
-    display: none;
-}
-
 
 /**********************************************************************
 Responsing
@@ -298,16 +290,11 @@ Responsing
     }
 
     .product_name {
-        display: none;
-    }
-
-    .product_name1 {
-        display: block;
         font-size: 16px;
     }
 
     .product_pri {
-        display: none;
+        font-size: 10px;
     }
 
 }
